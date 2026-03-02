@@ -11,13 +11,13 @@ source("C:\\Users\\gmcha\\OneDrive\\Documents\\disc golf programs\\birdbrain26\\
 # FILL IN THE FOLLOWING INPUTS:
 
 # create output folder and set it as working directory. This will be where the round recaps go.
-setwd("C:\\Users\\gmcha\\OneDrive\\Documents\\disc golf programs\\birdbrain26\\output")
+setwd("")
 
 # input <- folder where results/exports are saved (just makes the input for in a little less clunky)
-input <- "C:\\Users\\gmcha\\OneDrive\\Documents\\disc golf programs\\birdbrain26\\input"
+input <- 
 
 # output <- GoogleSheet where the league outputs will go
-out <- 'https://docs.google.com/spreadsheets/d/1_NvpAOZSjCd-hvwM_3MCx6DKh8aHnvdPXY-3zuKeaV0/edit?gid=0'
+out <- 
 
 # league setup
 # only to be done once at the start of the season!
@@ -52,4 +52,4 @@ bbround_udisc(20,paste0(input,'round20_blind'),out)
 # at any point between rounds, you can run bbpools() to re-adjust the pool assignments and slope/rating of your league.
 # this will automatically occur for the first time at round 11.
 # i'd recommend every 5-15 rounds, depending on the number of unique league members you have.
-#bbpools(link = out)
+# bbpools(link = out)
