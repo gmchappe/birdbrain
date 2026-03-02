@@ -52,7 +52,7 @@ bbround_udisc <- function(round,link,out)
     cat(paste0("Scores added to the file to facilitate pool assignments.\n"))
     
     cat(paste0('Adjusting points.\n'))
-    ptsdf <- bbpoints(today,as.data.frame(input[3]),as.data.frame(input[9]),as.data.frame(input[10]),as.integer(as.data.frame(input[1])$multiplier[1]),round)
+    ptsdf <- bbpoints(today,as.data.frame(input[3]),as.data.frame(input[9]),as.data.frame(input[10]),as.integer(as.data.frame(input[1])$multiplier[1]),round,out)
     
     
     if(ncol(newfsc) <= 10)
