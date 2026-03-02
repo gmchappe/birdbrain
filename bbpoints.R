@@ -8,9 +8,10 @@
   # atc - current all time, includes any adjustments made this season
   # multiplier - double points or not
   # rd - if it's the first round, the variables need to be treated slightly differently, because nobody is in the old leaderboard yet.
+  # wb - workbook from bbround_X()
 # output: list of players and new point total
 
-bbpoints <- function(df,lb,atp,atc,multiplier,rd)
+bbpoints <- function(df,lb,atp,atc,multiplier,rd,wb)
 {
   require(tidyverse)
   require(googlesheets4)
@@ -113,7 +114,7 @@ bbpoints <- function(df,lb,atp,atc,multiplier,rd)
     arrange(desc(Points))
   
   write_sheet(alltime,
-              ss= 'https://docs.google.com/spreadsheets/d/1_NvpAOZSjCd-hvwM_3MCx6DKh8aHnvdPXY-3zuKeaV0/edit?gid=0',
+              ss= wb,
               sheet = 'Current All Time')
   
   cat(paste0("Done with points adjusting.\n\n\n"))
