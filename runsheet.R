@@ -1,12 +1,12 @@
 #sourcing all programs
-source("C:\\Users\\gmcha\\OneDrive\\Documents\\disc golf programs\\birdbrain26\\bbsetup.R")
-source("C:\\Users\\gmcha\\OneDrive\\Documents\\disc golf programs\\birdbrain26\\bbinput.R")
-source("C:\\Users\\gmcha\\OneDrive\\Documents\\disc golf programs\\birdbrain26\\bbpoints.R")
-source("C:\\Users\\gmcha\\OneDrive\\Documents\\disc golf programs\\birdbrain26\\bbsham.R")
+source("bbsetup.R")
+source("bbinput.R")
+source("bbpoints.R")
+source("bbsham.R")
 
 # source the correct round file (or both, just be aware) depending on if you're using UDisc or PDGA
-source("C:\\Users\\gmcha\\OneDrive\\Documents\\disc golf programs\\birdbrain26\\bbround_udisc.R")
-source("C:\\Users\\gmcha\\OneDrive\\Documents\\disc golf programs\\birdbrain26\\bbround_pdga.R")
+source("bbround_udisc.R")
+source("bbround_pdga.R")
 
 # FILL IN THE FOLLOWING INPUTS:
 
